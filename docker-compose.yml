@@ -1,9 +1,9 @@
 services:
-  student-db:
+  database:
     image: mariadb:latest
     environment:
       MARIADB_ROOT_PASSWORD: "redhat"
-      MYSQL_DATABASE: "studentdb"
+      MYSQL_DATABASE: "studentapp"
     volumes:
       - "my-vol123:/var/lib/mysql"
     ports:
@@ -14,12 +14,12 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DB_NAME: "studentdb"
+      DB_NAME: "studentapp"
       DB_USER: "root"
       DB_PASSWORD: "redhat"
-      DB_HOST: "student-db"
+      DB_HOST: "database"
     depends_on:
-      - student-db
+      - database
 
   frontend:
     build: ./frontend
