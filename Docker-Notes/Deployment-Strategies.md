@@ -69,3 +69,27 @@ Multiple Virtual Machines (VMs) run on a single physical server using a Hypervis
 - Slower startup / Slow boot time
 
 - More memory usage
+
+# 3️⃣ Containerization (Modern Deployment)
+
+## 🔹 What it is:
+
+Applications run in containers, sharing the same OS kernel but isolated environments.
+
+### 🔹 Key Concept:
+Lightweight
+No need for full OS per app
+🔹 Popular Tools:
+Docker
+Kubernetes
+🔹 Example:
+Microservices architecture using Docker containers
+✅ Advantages:
+Very lightweight
+Fast startup
+Easy scaling
+Perfect for CI/CD
+❌ Disadvantages:
+Less isolation than VMs
+Requires container orchestration knowledge
+Security concerns if misconfigured
