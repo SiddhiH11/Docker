@@ -2,19 +2,19 @@
 
 Deployment strategies are methods for releasing new software versions from development to production, aiming to balance speed, risk, and uptime.
 
-# 1️⃣ Traditional Deployment
+## 1️⃣ Traditional Deployment
 
-🔹 What it is:
+### 🔹 What it is:
 
 Applications are installed directly on physical servers (hardware machines).
 
-🔹 How it works:
+### 🔹 How it works:
 
 - One server = One OS = One or multiple apps
 
 - Everything runs directly on hardware
 
-✅ Advantages:
+### ✅ Advantages:
 
 - Full control over hardware
 
@@ -22,7 +22,7 @@ Applications are installed directly on physical servers (hardware machines).
 
 - Good for high-performance workloads
 
-❌ Disadvantages:
+### ❌ Disadvantages:
 
 - Hard to scale
 
@@ -32,29 +32,40 @@ Applications are installed directly on physical servers (hardware machines).
 
 - Deployment is slow and risky
 
-# 2️⃣ Virtualization (VM-Based Deployment)
+## 2️⃣ Virtualization (VM-Based Deployment)
 
-🔹 What it is:
+### 🔹 What it is:
 
 Multiple Virtual Machines (VMs) run on a single physical server using a Hypervisor.
 
+### 🔹 Key Concept:
 
-🔹 Key Concept:
+- Each VM has its own OS
 
-Each VM has its own OS
+- Isolation between applications
 
-Isolation between applications
-🔹 Popular Tools:
-VMware
-VirtualBox
-Hyper-V
-🔹 Example:
-Running Windows + Linux on same physical machine
-✅ Advantages:
-Better resource utilization
-Isolation between apps
-Easy to scale compared to traditional
-❌ Disadvantages:
-Heavy (each VM has full OS)
-Slower startup
-More memory usage
+### 🔹 Popular Tools:
+
+- VMware
+
+- VirtualBox
+
+- Hyper-V
+
+### ✅ Advantages:
+
+- Better resource utilization
+
+- Strong Security and Isolation between apps
+
+- Easy to scale compared to traditional
+  
+- Supports multiple OS on same servers 
+
+### ❌ Disadvantages:
+
+- Heavy (each VM has full OS)
+
+- Slower startup / Slow boot time
+
+- More memory usage
